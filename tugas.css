@@ -1,0 +1,19 @@
+* {
+    margin:0;
+}
+
+.kotak {
+    display: inline-block;
+    justify-content: center;
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(31, 175, 175);
+    box-shadow: 0 0 0 3px black;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 19px;
+    margin-left: 20px;
+}

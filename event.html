@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <!-- <h1 id="judul">Halo!</h1> -->
+    <button id="btn" onclick="berubah">Klik!</button>
+    <script>
+        let tombol = document.getElementById("btn");
+        let berubah = false;
+
+        tombol.addEventListener("click", function(){
+            if(berubah) {
+            document.body.style.backgroundColor = "white";
+        } else {
+                document.body.style.backgroundColor = "blue";
+            }
+        berubah = !berubah
+        });
+
+        // let btn = document.getElementById("btn");
+        // let judul = document.getElementById("judul")
+
+        // btn.addEventListener("click", function (){
+        //     if (judul.innerText === "Halo!") {
+        //         judul.innerHTML = `<i>hai</i>`;
+        //     } else {
+        //         judul.innerText = "Halo!";
+        //     }
+        // });
+    </script>
+</body>
+</html>

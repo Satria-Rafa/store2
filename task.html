@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas</title>
+    <link rel="stylesheet" href="tugas.css">
+    <script>
+      const barang = [
+        { nama: "Laptop", harga: 5000000 },
+        { nama: "Mouse", harga: 200000 },
+        { nama: "Keyboard", harga: 300000 },
+        { nama: "Monitor", harga: 1500000 },
+        { nama: "Printer", harga: 1200000 },
+        { nama: "Flashdisk", harga: 100000 },
+        { nama: "Harddisk", harga: 800000 },
+        { nama: "Headset", harga: 250000 },
+        { nama: "Webcam", harga: 400000 },
+        { nama: "Speaker", harga: 350000 },
+      ];
+
+      const box = barang.map((item) => {
+        return `
+
+            <div class="kotak">
+              <img src="${item}">
+                <h1>${item.nama}
+                <h2>Rp. ${item.harga}
+            </div>
+            `;
+      });
+      document.write(box.join(""));
+    </script>
+  </head>
+  <body>
+
+    <!-- <div class="kotak">
+    </div> -->
+
+  </body>
+</html>

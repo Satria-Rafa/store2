@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      text-align: center;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body id="body">
+    <p id="nama" class="teks">ini tulisan</p>
+    <div class="">
+      <button onclick="coba()">Klik</button>
+      <button onclick="coba2()">Klik</button>
+    </div>
+    <p id="jurusan" class="teks" onmouseenter="coba2()" onmouseleave="coba()">
+      
+    </p>
+    <!-- <p id="kelas" class="teks"></p> -->
+    <script>
+      body = document.getElementById("body");
+      nama = document.getElementById("nama");
+
+      coba = () => {
+        body.style.backgroundColor = "lightBlue";
+        nama.style.color = "white";
+        nama.style.fontSize = "50px";
+      };
+
+      coba2 = () => {
+        body.style.backgroundColor = "red";
+        nama.style.fontSize = "2px";
+      };
+      // let body = document.querySelector("#body");
+      // body.style.background = "linear-gradient(to right, blue, red)";
+      // body.style.fontWeight = "bold";
+      // let nama = document.querySelector("#nama", ".teks");
+      // nama.innerHTML = "Nama : Satria rafa";
+      // nama.style.color = "cyan";
+      // nama.style.fontSize = "50px";
+      // let jurusan = document.querySelector("#jurusan");
+      // jurusan.innerHTML = "Jurusan : RPL";
+      // jurusan.style.color = "white";
+      // let kelas = document.querySelector("#kelas");
+      // kelas.innerHTML = "Kelas : XI RPL 2";
+      // kelas.style.color = "yellow";
+
+//       let saldo = 2000000000;
+
+// function formatRupiah(angka) {
+//   return "Rp " + angka.toLocaleString("id-ID");
+// }
+
+// function kurangi(harga) {
+//   if (saldo >= harga) {
+//     saldo -= harga;
+//     alert("Berhasil beli!");
+//   } else {
+//     alert("Saldo tidak cukup!");
+//   }
+
+//   document.getElementById("totalSaldo").innerText = formatRupiah(saldo);
+// }
+
+// document.getElementById("totalSaldo").innerText = formatRupiah(saldo);
+
+// document.getElementById("totalSaldo").innerText = formatRupiah(saldo);
+
+// biru = () => {
+//   rumah.style.color = "blue";
+// };
+// biru2 = () => {
+//   keranjang.style.color = "blue";
+// };
+// biru3 = () => {
+//   pesan.style.color = "blue";
+// };
+    </script>
+  </body>
+</html>
