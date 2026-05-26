@@ -1,6 +1,6 @@
 let produk = [
   {
-    img: "google pixel 9 Pro.jpg",
+    img: "google pixel 9 pro.jpg",
     merk: "Google",
     nama: "Google Pixel 9 Pro",
     harga: 10000000,
