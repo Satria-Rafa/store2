@@ -1,5 +1,8 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 
@@ -44,7 +47,8 @@ ul a:hover {
 }
 
 .containSaldo {
-  width: 50%;
+  width: 90%;
+  max-width: 600px;
   background-color: orange;
   display: flex;
   justify-content: center;
@@ -68,19 +72,28 @@ ul a:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .iklan img {
+  width: 100%;
+  max-width: 500px;
   border-radius: 20px;
-  width: 35%;
 }
 
+#containerBarang {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+
 .box {
-  display: inline-block;
-  justify-content: center;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 420px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 20px;
   background-color: whitesmoke;
   box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.6);
@@ -90,14 +103,13 @@ ul a:hover {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
-  margin-left: 44px;
 }
-
 .box img {
   width: 100%;
   height: 250px;
   border-radius: 20px;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
 .card-body {
@@ -150,4 +162,68 @@ ul a:hover {
   background-position: right center;
   color: red;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #containerBarang {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .containSaldo {
+    font-size: 20px;
+  }
+
+  #saldo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+  }
+
+  .box img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .btn-grad {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  nav .apl h1 {
+    margin-left: 0;
+    font-size: 35px;
+  }
+
+  nav ul {
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
